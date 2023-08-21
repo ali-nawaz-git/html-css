@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css animation</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background: red;
+        margin: auto;
+        animation-name: abc;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: 20;
+        margin-top: 10%;
+      }
+      @keyframes abc {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background: black;
+        margin: auto;
+        animation-name: abc;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: 20;
+        margin-top: 10%;
+      }
+      @keyframes abc2 {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+      .box3 {
+        width: 200px;
+        height: 200px;
+        background: gray;
+        margin: auto;
+        animation-name: abc3;
+        animation-duration: 10s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+      }
+      @keyframes abc3 {
+        0% {
+          transform: translateX(0px);
+        }
+        25% {
+          background-color: red;
+        }
+        50% {
+          background-color: gold;
+        }
+        100% {
+          transform: translateX(400px);
+        }
+      }
+      .box4 {
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        margin: auto;
+        animation-name: abc4;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+      }
+      @keyframes abc4 {
+        0% {
+          transform: translate(0px);
+        }
+        100% {
+          transform: translateX(400px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+  </body>
+</html>

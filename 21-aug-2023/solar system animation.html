@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar System Animation</title>
+    <style>
+      body {
+        background-image: url(pexels-felix-mittermeier-956981.jpg);
+        background-size: cover;
+      }
+      .sun {
+        width: 120px;
+        height: 120px;
+        border-radius: 100px;
+        background-image: url(sun5.png);
+        background-size: cover;
+        margin: 250px auto;
+        margin-top: 20%;
+        position: relative;
+      }
+      .mercury {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background-image: url(mercury\ 3.jpg);
+        background-size: cover;
+        position: absolute;
+        bottom: 40px;
+        right: -50px;
+        transform-origin: -100px 0px;
+        animation-name: mercuryanimation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-play-state: running;
+      }
+      @keyframes mercuryanimation {
+        to {
+          transform: rotateZ(0deg);
+        }
+        from {
+          transform: rotateZ(-359deg);
+        }
+      }
+      .venus {
+        width: 60px;
+        height: 60px;
+        border-radius: 70px;
+        background-image: url(venus.jpeg);
+        background-size: cover;
+        position: absolute;
+        bottom: 40px;
+        right: -160px;
+        animation-name: venusanimation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-origin: -200px center;
+        animation-play-state: running;
+      }
+      @keyframes venusanimation {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(359deg);
+        }
+      }
+      .earth {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        background-image: url(earth2.png);
+        background-size: cover;
+        position: absolute;
+        bottom: 40px;
+        right: -300px;
+        animation-name: earthanimation;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        transform-origin: -300px center;
+      }
+      @keyframes earthanimation {
+        to {
+          transform: rotateZ(0deg);
+        }
+        from {
+          transform: rotateZ(-359deg);
+        }
+      }
+      .jupiter {
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+        background-image: url(jupiter.jpg);
+        background-size: cover;
+        position: absolute;
+        bottom: 40px;
+        right: -500px;
+        animation-name: jupiteranimation;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        transform-origin: -600px center;
+      }
+      @keyframes jupiteranimation {
+        to {
+          transform: rotateZ(0deg);
+        }
+        from {
+          transform: rotateZ(-359deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sun">
+      <div class="mercury"></div>
+      <div class="venus"></div>
+      <div class="earth"></div>
+      <div class="jupiter"></div>
+    </div>
+  </body>
+</html>
