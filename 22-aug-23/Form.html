@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .form {
+        width: 520px;
+        height: 445px;
+        margin: 150px auto;
+        border-radius: 10px;
+        background-image: -webkit-linear-gradient(top, #3b3b3b, #373737);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .form > div {
+        height: 77px;
+        line-height: 77px;
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        border-bottom: 1px solid #1b1b1b;
+        text-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
+      }
+      .form > input {
+        display: block;
+        width: 475px;
+        height: 38px;
+        border-radius: 20px;
+        margin: 7px auto;
+        background-image: -webkit-linear-gradient(top, #b1b1b1, #d7d7d7);
+      }
+      .tnc {
+        font-size: 1em !important;
+        text-align: left !important;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <div>Create an Account</div>
+
+      <input type="text" name="name" value="" placeholder="name" />
+      <input
+        type="number"
+        name="Phonenumber"
+        value=""
+        placeholder="Phonenumber"
+      />
+      <input type="email" name="email" value="" placeholder="email" />
+      <input type="password" name="password" value="" placeholder="password" />
+      <div class="tnc">
+        <input type="checkbox" name="tnc" value="agree" /> agree to the Terms
+        and conditons and Privacy Poilcy
+      </div>
+    </form>
+  </body>
+</html>
